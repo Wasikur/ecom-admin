@@ -27,7 +27,7 @@ export default function SideBar({ children }) {
             />
             <button
               onClick={() => setExpanded((curr) => !curr)}
-              className="p-6 rounded-lg bg-gray-50 hover:bg-gray-100"
+              className="p-1 rounded-lg bg-gray-50 hover:bg-gray-100"
             >
               {expanded ? (
                 <ChevronFirst className="w-6 h-6 sm:w-5 sm:h-5" />
@@ -38,7 +38,7 @@ export default function SideBar({ children }) {
           </div>
 
           <SidebarContext.Provider value={{ expanded }}>
-            <ul className="flex-1 px-3 py-5">{children}</ul>
+            <ul className="flex-1 px-1 py-5">{children}</ul>
           </SidebarContext.Provider>
         </ScrollArea>
       </nav>

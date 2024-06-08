@@ -125,7 +125,7 @@ const DashboardLayout = () => {
       </div>
       <div className="flex flex-col w-full">
         <Header />
-        <div className="bg-stone-100 w-full h-full p-12">
+        <div className="bg-stone-100 w-full h-full p-2">
           <Outlet />
         </div>
       </div>
