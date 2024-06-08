@@ -37,7 +37,7 @@ const DashboardLayout = () => {
 
   return (
     <div className="flex">
-      <div className="shadow-md">
+      <div className="absolute z-10 shadow-md overflow-y-1 opacity-95">
         <SideBar>
           <SidebarItem
             icon={<PieChart />}
@@ -125,7 +125,7 @@ const DashboardLayout = () => {
       </div>
       <div className="flex flex-col w-full">
         <Header />
-        <div className="bg-stone-100 w-full h-full p-2">
+        <div className="bg-stone-100 w-full h-full pl-16 pr-2">
           <Outlet />
         </div>
       </div>

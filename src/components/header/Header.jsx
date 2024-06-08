@@ -46,28 +46,44 @@ const Header = () => {
   const displayName = currentUser?.displayName || currentUser?.email;
 
   return (
-    <div className="flex justify-between h-20 w-full p-6 bg-stone-50 select-none border-b-2 shadow-xl">
+    <div className="flex flex-col md:flex-row justify-between h-20 w-full pl-24 mr-14 p-6 bg-stone-50 select-none border-b-2 shadow-xl">
       {isMobile ? (
-        <span className="text-xl font-semibold">
-          Welcome, {displayName || "Guest"}
-        </span>
+        <>
+          <div className="flex justify-between items-center w-full">
+            <div className="flex gap-2">
+              <Link to="/">
+                <Button className="bg-indigo-500 font-bold hover:bg-indigo-600 transition-colors">
+                  Visit Website
+                </Button>
+              </Link>
+              <AvatarButton />
+            </div>
+          </div>
+          <span className="text-xl font-semibold mt-4">
+            Welcome, {displayName || "Guest"}
+          </span>
+        </>
       ) : (
-        <TypeAnimation
-          sequence={[`Welcome,`, 1000, `${displayName || "Guest"}`, 1000]}
-          wrapper="span"
-          speed={50}
-          style={{ fontSize: "1.5rem", fontWeight: 600 }}
-          repeat={Infinity}
-        />
+        <>
+          <div className="flex items-center gap-2">
+            <TypeAnimation
+              sequence={[`Welcome,`, 1000, `${displayName || "Guest"}`, 1000]}
+              wrapper="span"
+              speed={50}
+              style={{ fontSize: "1.5rem", fontWeight: 600 }}
+              repeat={Infinity}
+            />
+          </div>
+          <div className="flex flex-row items-center gap-10">
+            <Link to="/">
+              <Button className="bg-indigo-500 font-bold hover:bg-indigo-600 transition-colors">
+                Visit Website
+              </Button>
+            </Link>
+            <AvatarButton />
+          </div>
+        </>
       )}
-      <div className="flex flex-row items-center gap-10">
-        <Link to="/">
-          <Button className="bg-indigo-500 font-bold hover:bg-indigo-600 transition-colors">
-            Visit Website
-          </Button>
-        </Link>
-        <AvatarButton />
-      </div>
     </div>
   );
 };
