@@ -49,8 +49,8 @@ const Header = () => {
     <div className="flex flex-col md:flex-row justify-between h-20 w-full pl-24 mr-14 p-6 bg-stone-50 select-none border-b-2 shadow-xl">
       {isMobile ? (
         <>
-          <div className="flex justify-between items-center w-full">
-            <div className="flex gap-2">
+          <div className="pl-20 w-full">
+            <div className="flex gap-4">
               <Link to="/">
                 <Button className="bg-indigo-500 font-bold hover:bg-indigo-600 transition-colors">
                   Visit Website
