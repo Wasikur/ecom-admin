@@ -21,7 +21,7 @@ export default function SideBar({ children }) {
             <img
               src="./assets/logo.png"
               className={`overflow-hidden transition-all select-none ${
-                expanded ? "w-40" : "w-0"
+                expanded ? "w-24" : "w-0"
               }`}
               alt=""
             />
