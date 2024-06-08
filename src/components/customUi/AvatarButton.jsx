@@ -54,12 +54,12 @@ function AvatarButton() {
             </Avatar>
             <Profile />
           </div>
-          <DropdownMenuItem
+          <div
             onClick={handleSignOut}
-            className="mt-4 px-4 py-2 bg-red-500 text-white rounded cursor-pointer hover:bg-red-600"
+            className="mt-4 px-4 py-2 bg-red-500 text-white text-center rounded cursor-pointer hover:bg-red-600"
           >
             Sign Out
-          </DropdownMenuItem>
+          </div>
         </DropdownMenuContent>
       </DropdownMenu>
     </div>
