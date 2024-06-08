@@ -38,7 +38,7 @@ const Header = () => {
   return (
     <>
       <div className="flex justify-between h-20 w-full p-6 bg-stone-50 select-none border-b-2 shadow-xl">
-        <TypeAnimation
+{/*         <TypeAnimation
           sequence={[
             `Welcome`,
             1000, // wait 1s before replacing "Mice" with
@@ -49,7 +49,7 @@ const Header = () => {
           speed={50}
           style={{ fontSize: "1.5rem", fontWeight: 600 }}
           repeat={Infinity}
-        />
+        /> */}
         <div className="flex flex-row items-center gap-10">
           {/* <Bell /> */}
           <Link to="/">
