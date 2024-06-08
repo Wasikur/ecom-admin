@@ -88,7 +88,7 @@ const pieChartData = {
 
 const Home = () => {
   return (
-    <div className="p-2">
+    <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">Dashboard</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
         <div className="shadow-lg p-4 rounded-lg bg-white transition-transform transform hover:scale-105">
